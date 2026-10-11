@@ -59,55 +59,144 @@ else:
 
 SOURCE_NOTES = {
     1: {
-        "label": "source presentation: notification overload",
+        "label": "notification alerts can disrupt attention",
+        "reference": (
+            "Stothart, C., Mitchum, A., & Yehnert, C. (2015). The attentional cost of receiving "
+            "a cell phone notification. Journal of Experimental Psychology: Human Perception and "
+            "Performance, 41(4), 893-897. https://doi.org/10.1037/xhp0000100"
+        ),
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26121498/",
+        "url_label": "PubMed record",
+        "publisher_url": "https://doi.org/10.1037/xhp0000100",
         "supports": (
-            "the source deck frames notification fatigue as overload created by excessive, "
-            "repetitive, irrelevant, or poorly timed notifications, with disengagement and "
-            "reduced attention as central risks."
+            "In a controlled experiment, phone notifications alone disrupted performance on an "
+            "attention-demanding task even when participants did not interact with the phone."
         ),
         "note": (
-            "the deck also contains several specific numerical claims about response, retention, "
-            "frequency, timing, and click-through rates. those figures are intentionally not "
-            "treated as measured facts in this app unless independently verified."
+            "This supports the interruption/attention-cost argument. It does not establish a universal "
+            "cost in minutes for every notification."
         ),
     },
     2: {
-        "label": "source presentation: relevance and personalization",
-        "supports": (
-            "the source deck recommends context-aware notifications, user-controlled preferences, "
-            "and personalization to reduce overload and increase perceived relevance."
+        "label": "large-scale patterns in mobile notifications",
+        "reference": (
+            "Sahami Shirazi, A., Henze, N., Dingler, T., Pielot, M., Weber, D., & Schmidt, A. (2014). "
+            "Large-scale assessment of mobile notifications. Proceedings of CHI '14, 3055-3064. "
+            "https://doi.org/10.1145/2556288.2557189"
         ),
-        "note": "used here as design guidance rather than as a universal causal formula.",
-    },
-    3: {
-        "label": "source presentation: timing",
+        "url": "https://weberdo.com/publications/2014-Large-Scale-Assessment-of-Mobile-Notifications.pdf",
+        "url_label": "Open paper",
+        "publisher_url": "https://dl.acm.org/doi/10.1145/2556288.2557189",
         "supports": (
-            "the source deck argues that notification timing affects receptivity and that poorly "
-            "timed alerts can become interruptions rather than useful prompts."
+            "The study analyzed close to 200 million notifications from more than 40,000 users and "
+            "found substantial differences in how people value notifications across applications, "
+            "people, events, importance, and context."
         ),
         "note": (
-            "specific timing windows in the original slides are not presented here as universal "
-            "benchmarks."
+            "Useful for the presentation's signal-versus-noise framing. It does not imply one ideal "
+            "notification frequency for every product or audience."
+        ),
+    },
+    3: {
+        "label": "context changes notification disruption and receptivity",
+        "reference": (
+            "Mehrotra, A., Pejovic, V., Vermeulen, J., Hendley, R. J., & Musolesi, M. (2016). "
+            "My Phone and Me: Understanding People's Receptivity to Mobile Notifications. "
+            "Proceedings of CHI '16, 1021-1032. https://doi.org/10.1145/2858036.2858566"
+        ),
+        "url": "https://discovery.ucl.ac.uk/id/eprint/1502364/",
+        "url_label": "UCL open-access record",
+        "publisher_url": "https://dl.acm.org/doi/10.1145/2858036.2858566",
+        "supports": (
+            "An in-situ study of 10,372 notifications found that response time and perceived "
+            "disruption varied with presentation, alert type, sender relationship, and the type, "
+            "completion level, and complexity of the user's current task."
+        ),
+        "note": (
+            "The authors also found that even useful or important notifications can be disruptive. "
+            "This is strong support for treating timing and context as part of notification quality."
         ),
     },
     4: {
-        "label": "source presentation: concise, empathetic content",
+        "label": "relevance and actionability influence receptivity",
+        "reference": (
+            "Fischer, J. E., Yee, N., Bellotti, V., Good, N., Benford, S., & Greenhalgh, C. (2010). "
+            "Effects of content and time of delivery on receptivity to mobile interruptions. "
+            "Proceedings of MobileHCI '10, 103-112. https://doi.org/10.1145/1851600.1851620"
+        ),
+        "url": "https://interruptions.net/literature/Fischer-MobileHCI10.pdf",
+        "url_label": "Open paper",
+        "publisher_url": "https://dl.acm.org/doi/10.1145/1851600.1851620",
         "supports": (
-            "the source deck recommends concise notification content and supportive language so "
-            "users can understand the message quickly without unnecessary friction."
+            "In a naturalistic mobile study, receptivity was strongly influenced by message content; "
+            "interest, entertainment, relevance, and actionability were associated with perceived "
+            "content quality and receptivity."
         ),
         "note": (
-            "specific character-count and click-through claims from the original deck are not "
-            "repeated as measured findings in this app."
+            "In this particular SMS study, the tested clock-time delivery manipulation was not a "
+            "significant predictor. The result supports relevance/actionability more directly than a "
+            "simple 'evenings are always better' rule."
         ),
     },
     5: {
-        "label": "source presentation: monitor and iterate",
-        "supports": (
-            "the source deck recommends tracking engagement, opt-outs, open/response behavior, and "
-            "testing frequency, timing, and content rather than treating notification design as static."
+        "label": "context-aware timing can reduce interruption burden",
+        "reference": (
+            "Ho, J., & Intille, S. S. (2005). Using context-aware computing to reduce the perceived "
+            "burden of interruptions from mobile devices. Proceedings of CHI '05, 909-918. "
+            "https://doi.org/10.1145/1054972.1055100"
         ),
-        "note": "used as a practical product-design recommendation.",
+        "url": "https://www.media.mit.edu/publications/using-context-aware-computing-to-reduce-the-perceived-burden-of-interruptions-from-mobile-devices/",
+        "url_label": "MIT Media Lab record",
+        "publisher_url": "https://dl.acm.org/doi/10.1145/1054972.1055100",
+        "supports": (
+            "Messages delivered at detected activity transitions were better received than messages "
+            "delivered at random times, supporting context-aware delivery rather than fixed universal windows."
+        ),
+        "note": (
+            "This is evidence for opportune moments and transitions, not evidence that one clock time "
+            "works best for everyone."
+        ),
+    },
+    6: {
+        "label": "the moment of interruption matters",
+        "reference": (
+            "Adamczyk, P. D., & Bailey, B. P. (2004). If not now, when? The effects of interruption "
+            "at different moments within task execution. Proceedings of CHI '04, 271-278. "
+            "https://doi.org/10.1145/985692.985727"
+        ),
+        "url": "https://interruptions.net/literature/Adamczyk-CHI04-p271-adamczyk.pdf",
+        "url_label": "Open paper",
+        "publisher_url": "https://dl.acm.org/doi/10.1145/985692.985727",
+        "supports": (
+            "The study found that interruptions at different moments within task execution produced "
+            "different effects on users' emotional state and social attribution, supporting the idea "
+            "that interruption timing should account for task state."
+        ),
+        "note": (
+            "This is broader interruption research rather than a push-notification frequency study, "
+            "so it is used here specifically for the timing/context argument."
+        ),
+    },
+    7: {
+        "label": "batching can outperform both constant interruption and total silence",
+        "reference": (
+            "Fitz, N., Kushlev, K., Jagannathan, R., Lewis, T., Paliwal, D., & Ariely, D. (2019). "
+            "Batching smartphone notifications can improve well-being. Computers in Human Behavior, "
+            "101, 84-94. https://doi.org/10.1016/j.chb.2019.07.016"
+        ),
+        "url": "https://scholars.duke.edu/publication/1402953",
+        "url_label": "Duke Scholars record",
+        "publisher_url": "https://doi.org/10.1016/j.chb.2019.07.016",
+        "supports": (
+            "In a randomized field experiment with 237 participants, delivering notifications in "
+            "three predictable daily batches improved several reported well-being and attention-related "
+            "outcomes compared with usual delivery, while completely withholding notifications produced "
+            "few of those benefits and increased anxiety/FoMO."
+        ),
+        "note": (
+            "This supports experimenting with batching and cadence rather than assuming 'more' or 'none' "
+            "is universally optimal. It should not be converted into a universal three-times-per-day rule."
+        ),
     },
 }
 
@@ -119,14 +208,13 @@ SECTIONS = [
         "eyebrow": "START HERE",
         "title": "When everything asks for attention, nothing feels important.",
         "lead": (
-            "Notifications are supposed to help us notice what matters. The problem starts when "
-            "the system asks for attention so often that the request itself loses meaning. {cite:1}"
+            "Notifications are supposed to help us notice what matters. But even a notification that "
+            "we never open can pull attention away from an ongoing task. {cite:1}"
         ),
         "paragraphs": [
             (
-                "That is the core tension behind notification fatigue: useful prompts compete with "
-                "repetitive, irrelevant, or badly timed alerts until the whole stream begins to feel "
-                "like background noise."
+                "At scale, notification streams are also highly varied: different applications and "
+                "different kinds of messages are valued very differently by users. {cite:2}"
             ),
             (
                 "This isn't really a presentation about turning notifications off. It's a discussion "
@@ -135,7 +223,7 @@ SECTIONS = [
         ],
         "callout_type": "info",
         "callout": "A notification has value only while the user still believes notifications are worth noticing.",
-        "citations": [1],
+        "citations": [1, 2],
     },
     {
         "id": "noise",
@@ -143,13 +231,14 @@ SECTIONS = [
         "eyebrow": "THE FAILURE MODE",
         "title": "Helpful nudges can quietly become a wall of interruptions.",
         "lead": (
-            "Volume matters, but volume is only part of the problem. Timing, repetition, and "
-            "relevance all affect whether a notification feels useful or intrusive. {cite:1}"
+            "Volume matters, but volume is only part of the problem. Research on real-world mobile "
+            "notifications shows that perceived disruption also changes with alert type, sender, current "
+            "task, and task complexity. {cite:3}"
         ),
         "paragraphs": [
             (
-                "A message can be important in isolation and still contribute to fatigue when it "
-                "arrives beside too many other demands for attention."
+                "A message can be important in isolation and still be disruptive when it arrives at a "
+                "poor moment or alongside too many other demands for attention. {cite:3}"
             ),
             (
                 "In other words, users don't experience each alert separately. They experience the "
@@ -158,7 +247,7 @@ SECTIONS = [
         ],
         "callout_type": "warning",
         "callout": "The problem is rarely one notification. It's the accumulated attention claim.",
-        "citations": [1],
+        "citations": [3],
     },
     {
         "id": "signal",
@@ -166,14 +255,14 @@ SECTIONS = [
         "eyebrow": "THE CENTERPIECE",
         "title": "The notification stream is a signal-to-noise system.",
         "lead": (
-            "Every alert is effectively making a claim: 'this deserves your attention now.' If too "
-            "many low-value claims arrive, the signal gets harder to trust."
+            "Every alert is effectively making a claim: 'this deserves your attention now.' Large-scale "
+            "notification research shows that users assign very different value to different kinds of "
+            "alerts, which is why raw notification count is only part of the story. {cite:2}"
         ),
         "paragraphs": [
             (
-                "That makes notification fatigue partly structural. The more often the system asks "
-                "for attention without delivering corresponding value, the less meaningful the next "
-                "request can feel."
+                "That makes notification fatigue partly structural. If low-value claims repeatedly compete "
+                "with useful ones, the stream itself can become harder to interpret."
             ),
             (
                 "Use the controls here as a thought experiment, not as a prediction. The goal is to "
@@ -182,7 +271,7 @@ SECTIONS = [
         ],
         "callout_type": "info",
         "callout": "The exact numbers are illustrative. The useful question is how quickly low-value alerts can dominate the stream.",
-        "citations": [1],
+        "citations": [2],
     },
     {
         "id": "sweetspot",
@@ -190,13 +279,14 @@ SECTIONS = [
         "eyebrow": "FREQUENCY",
         "title": "More communication is not automatically more communication value.",
         "lead": (
-            "The source material recommends avoiding notification overload and finding a frequency "
-            "that preserves usefulness without overwhelming the user. {cite:1}"
+            "There is no defensible universal 'perfect' notification count. One randomized field study "
+            "found benefits from batching notifications into predictable windows, while completely "
+            "withholding them produced fewer benefits and more anxiety/FoMO. {cite:7}"
         ),
         "paragraphs": [
             (
-                "There probably isn't one universal 'correct' number. Different products, audiences, "
-                "tasks, and urgency levels create different tolerances."
+                "Different products, audiences, tasks, and urgency levels create different tolerances. "
+                "That makes cadence something to test rather than a number to inherit from a benchmark."
             ),
             (
                 "So the more practical question is: at what point does another notification add less "
@@ -205,7 +295,7 @@ SECTIONS = [
         ],
         "callout_type": "info",
         "callout": "Think in terms of marginal value: what does the next notification add that the previous one did not?",
-        "citations": [1],
+        "citations": [7],
     },
     {
         "id": "relevance",
@@ -213,23 +303,23 @@ SECTIONS = [
         "eyebrow": "CONTEXT",
         "title": "The best notification is not just timely. It is relevant to this user.",
         "lead": (
-            "The source deck emphasizes context-aware messages, personalization, and user-controlled "
-            "preferences as ways to reduce overload. {cite:2}"
+            "Relevance and actionability are not just nice-to-have writing qualities. In field research, "
+            "they were among the factors associated with how receptive people were to mobile messages. {cite:4}"
         ),
         "paragraphs": [
             (
                 "A generic alert asks every user to spend attention. A contextual alert earns that "
                 "attention by connecting to something the user actually needs, did, missed, or is "
-                "about to do."
+                "about to do. {cite:3} {cite:4}"
             ),
             (
-                "User control matters too. Preferences can turn notification design from something "
-                "done to the user into something partly configured by the user."
+                "This is also why personalization should mean more than inserting a name. The useful "
+                "question is whether the message fits the person's situation and next action."
             ),
         ],
         "callout_type": "info",
         "callout": "Relevance is not decoration. It is part of the attention bargain.",
-        "citations": [2],
+        "citations": [3, 4],
     },
     {
         "id": "timing",
@@ -237,14 +327,14 @@ SECTIONS = [
         "eyebrow": "WHEN",
         "title": "The same message can feel useful or disruptive depending on when it arrives.",
         "lead": (
-            "The source material treats timing as part of notification quality, not as a separate "
-            "delivery detail. {cite:3}"
+            "Timing is more defensible when we think in terms of context and task state rather than a "
+            "single 'best hour.' Studies have found better receptivity at activity transitions and "
+            "different effects when interruptions arrive at different moments within a task. {cite:5} {cite:6}"
         ),
         "paragraphs": [
             (
-                "A well-written message can still fail if it lands at the wrong moment. Urgency, user "
-                "state, sleep, focus, active work, and recent activity all change the context in which "
-                "the alert is received."
+                "Real-world notification research also finds that perceived disruption depends on the "
+                "task a person is doing, how far along they are, and how complex it is. {cite:3}"
             ),
             (
                 "That suggests a useful design question: should this message be sent now, later, "
@@ -253,7 +343,7 @@ SECTIONS = [
         ],
         "callout_type": "warning",
         "callout": "Timing is not just logistics. Timing changes the meaning of the interruption.",
-        "citations": [3],
+        "citations": [3, 5, 6],
     },
     {
         "id": "design",
@@ -261,22 +351,23 @@ SECTIONS = [
         "eyebrow": "CONTENT + FEEDBACK",
         "title": "Notification quality is a system, not a sentence.",
         "lead": (
-            "The source deck combines two practical ideas: keep messages concise and empathetic, and "
-            "continuously monitor whether the strategy is actually working. {cite:4} {cite:5}"
+            "The evidence points away from one-dimensional rules. Content and relevance matter, context "
+            "and timing matter, and delivery cadence can matter too. {cite:3} {cite:4} {cite:7}"
         ),
         "paragraphs": [
             (
                 "That means content design, frequency, timing, relevance, preferences, and analytics "
-                "all belong to the same system. Improving only one dimension may not fix the overall experience."
+                "belong to the same system. Improving only one dimension may not fix the overall experience."
             ),
             (
-                "A/B testing, opt-out behavior, open/response patterns, and qualitative feedback can "
-                "help reveal where the system is creating value and where it is simply creating noise."
+                "A/B testing, opt-out behavior, open/response patterns, and qualitative feedback are "
+                "practical ways to learn where a particular notification system creates value and where "
+                "it creates noise. Treat those as product-design methods, not findings from one universal study."
             ),
         ],
         "callout_type": "info",
         "callout": "Don't just send notifications. Instrument the notification system and learn from how people respond.",
-        "citations": [4, 5],
+        "citations": [3, 4, 7],
     },
     {
         "id": "takeaways",
@@ -284,13 +375,14 @@ SECTIONS = [
         "eyebrow": "WHAT TO REMEMBER",
         "title": "Protect the signal, not the volume.",
         "lead": (
-            "Notification fatigue is less about whether alerts exist and more about whether the "
-            "attention they consume keeps producing enough value."
+            "Notification design is an attention-allocation problem: even an unopened alert can disrupt "
+            "attention, and real-world receptivity depends on context, content, and timing. {cite:1} {cite:3}"
         ),
         "paragraphs": [
             (
-                "Useful notification systems tend to be selective, contextual, timely, concise, "
-                "configurable, and measurable. {cite:2} {cite:3} {cite:4} {cite:5}"
+                "The strongest general lesson is not 'send exactly X alerts.' It is to make alerts more "
+                "selective, relevant, context-aware, and testable, and to consider batching when the use "
+                "case allows it. {cite:4} {cite:5} {cite:7}"
             ),
             (
                 "The design goal is not maximum reach. It is sustained trust in the stream."
@@ -298,30 +390,31 @@ SECTIONS = [
         ],
         "callout_type": "info",
         "callout": "If every message is urgent, urgency becomes meaningless. If every alert matters, fewer alerts may actually matter more.",
-        "citations": [2, 3, 4, 5],
+        "citations": [1, 3, 4, 5, 7],
     },
     {
         "id": "sources",
         "nav_label": "Sources & evidence notes",
         "eyebrow": "EVIDENCE NOTES",
-        "title": "What this app preserves from the source decks - and what it deliberately softens.",
+        "title": "What the research supports - and what remains illustrative.",
         "lead": (
-            "The app preserves the source presentations' core structure and recommendations while "
-            "avoiding several precise numerical claims that were not independently verified here."
+            "The presentation now uses published notification and interruption research in place of the "
+            "original deck's unverified benchmark-style references."
         ),
         "paragraphs": [
             (
-                "The original decks include specific figures for response rates, retention, ideal "
-                "frequency, timing windows, and click-through improvements. Those figures may be useful "
-                "starting points for further research, but this app does not present them as established facts."
+                "The original slides included precise claims about ideal daily frequency, retention, "
+                "response rates, timing windows, and character-count click-through effects. I have not "
+                "carried those numbers forward because the sources available here do not justify treating "
+                "them as universal benchmarks."
             ),
             (
-                "The signal-to-noise simulator is intentionally illustrative. Its purpose is to help "
-                "an audience reason about structure and direction, not to predict user behavior."
+                "The signal-to-noise simulator, sweet-spot curve, and timing graphic remain illustrative. "
+                "They are discussion tools for structure and direction, not plots of the cited studies' data."
             ),
         ],
         "callout_type": "warning",
-        "callout": "Treat the simulator and any scenario values as discussion tools, not measured findings.",
+        "callout": "The research grounds the direction of the argument. The app's scenario values are still illustrative.",
         "citations": [],
     },
 ]
@@ -487,6 +580,7 @@ def inject_styles() -> None:
             text-size-adjust:100%;
         }
         body { text-transform:lowercase; }
+        .citation-text { text-transform:none; }
         .stApp { background:var(--background-color); color:var(--text-color); }
         [data-testid="stHeader"] {
             background:color-mix(in srgb, var(--background-color) 88%, transparent);
@@ -616,12 +710,23 @@ def go_to(section_id: str) -> None:
 def render_endnotes(citation_ids: list[int]) -> None:
     if not citation_ids:
         return
-    lines = ["<div class='footnotes'><strong>section source notes</strong>"]
+    lines = ["<div class='footnotes'><strong>section sources</strong>"]
     for citation_id in citation_ids:
         item = SOURCE_NOTES[citation_id]
+        primary_link = (
+            f" <a href='{escape(item['url'])}' target='_blank' rel='noopener noreferrer'>"
+            f"{escape(item['url_label'])}</a>"
+            if item.get("url") else ""
+        )
+        publisher_link = (
+            f" · <a href='{escape(item['publisher_url'])}' target='_blank' rel='noopener noreferrer'>publisher / doi</a>"
+            if item.get("publisher_url") else ""
+        )
         lines.append(
             f"<p id='source-{citation_id}'><strong>[{citation_id}]</strong> "
             f"<span class='source-label'>{escape(item['label'])}</span><br>"
+            f"<span class='citation-text'>{escape(item['reference'])}</span>"
+            f"{primary_link}{publisher_link}<br>"
             f"{escape(item['supports'])}<br><em>{escape(item['note'])}</em></p>"
         )
     st.markdown("".join(lines) + "</div>", unsafe_allow_html=True)
@@ -773,10 +878,22 @@ def render_visual(section_id: str) -> None:
             st.markdown(f"<div class='summary-line'>{escape(point)}</div>", unsafe_allow_html=True)
 
     elif section_id == "sources":
+        st.caption("source links were re-checked while this revision was prepared in october 2026.")
         for citation_id, item in SOURCE_NOTES.items():
+            primary_link = (
+                f" <a href='{escape(item['url'])}' target='_blank' rel='noopener noreferrer'>"
+                f"{escape(item['url_label'])}</a>"
+                if item.get("url") else ""
+            )
+            publisher_link = (
+                f" · <a href='{escape(item['publisher_url'])}' target='_blank' rel='noopener noreferrer'>publisher / doi</a>"
+                if item.get("publisher_url") else ""
+            )
             st.markdown(
                 f"<div class='source-item' id='source-{citation_id}'>"
-                f"<span class='source-label'>[{citation_id}] {escape(item['label'])}</span>"
+                f"<span class='source-label'>[{citation_id}] {escape(item['label'])}</span><br>"
+                f"<span class='citation-text'>{escape(item['reference'])}</span>"
+                f"{primary_link}{publisher_link}"
                 f"<div class='source-evidence'><strong>what it supports:</strong> {escape(item['supports'])}</div>"
                 f"<div class='source-evidence'><strong>evidence note:</strong> {escape(item['note'])}</div>"
                 f"</div>",
